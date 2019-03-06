@@ -10,11 +10,11 @@ const IndexPage = () => (
     <h1>Rhanel Candia</h1>
     <h3>Web Developer | Software Engineer</h3>
     <p>
-      Web is here to stay. 
+      I code for the web. 
       Reach me at <a href="mailto:rhan@candia.dev">rhan@candia.dev</a>. 
       Let's get in touch.<br />
       <GlitchEffect className="glitch-effect">
-        <span>The site is still under construction.</span>
+        <span>I'm still working on the rest of the site.</span>
       </GlitchEffect>
     </p>
   </Layout>
