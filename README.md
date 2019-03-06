@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3afae2ba-cc21-4673-9984-2957dccd1672/deploy-status)](https://app.netlify.com/sites/elastic-montalcini-309703/deploys)
