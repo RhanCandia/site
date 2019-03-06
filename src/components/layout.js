@@ -32,10 +32,9 @@ const Layout = ({ children }) => (
             padding: `1.45rem 1.0875rem 1.45rem`,
             paddingTop: 0,
             display: `flex`,
-            flexDirection: `column`,
-            justifyContent: `center`,
+            justifyContent: `flex-start`,
+            alignItems: `center`,
             backgroundColor: `#fff`,
-            color: `#333`
           }}
         >
           <main>{children}</main>
