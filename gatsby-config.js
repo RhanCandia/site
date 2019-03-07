@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `rhanel_candia`,
-        short_name: `rhancandia`,
+        name: `Rhanel Candia`,
+        short_name: `Rhan`,
         start_url: `/`,
         background_color: `#FFF`,
         theme_color: `#FFF`,
@@ -38,11 +38,6 @@ module.exports = {
       options: {
         trackingId: "UA-135769704-1",
         head: true,
-        anonymize: true,
-        respectDNT: true,
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "rhan.candia.com",
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
