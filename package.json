@@ -19,12 +19,10 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-glitch-effect": "^1.0.4",
-    "react-glitchify": "^2.4.1",
     "react-helmet": "^5.2.0",
-    "react-text-glitch": "0.0.4",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-ocean-beach": "^0.16.18"
+    "typography-theme-grand-view": "^0.16.19",
   },
   "devDependencies": {
     "prettier": "^1.16.4"

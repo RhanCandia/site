@@ -34,7 +34,6 @@ const Layout = ({ children }) => (
             display: `flex`,
             justifyContent: `flex-start`,
             alignItems: `center`,
-            backgroundColor: `#fff`,
           }}
         >
           <main>{children}</main>
