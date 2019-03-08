@@ -22,7 +22,7 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-grand-view": "^0.16.19",
+    "typography-theme-grand-view": "^0.16.19"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
