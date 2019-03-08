@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Rhanel Candia`,
-    description: `Full stack web developer.`,
+    description: `I code for the web. I specialize in the back-end with PHP. I've been learning more front-end recently hoping to specialize in Javascript with Node, React and Vue. Reach me at rhan@candia.dev. Let's get in touch.`,
     author: `@RhanCandia`,
+    siteUrl: `https://candia.dev`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,6 +41,15 @@ module.exports = {
         head: true,
         anonymize: true,
         respectDNT: true,
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://candia.dev`,
+        sitemap: `https://candia.dev/sitemap.xml`,
+        policy: [{ userAgent: `*`, allow: `/` }],
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

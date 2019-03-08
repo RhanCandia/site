@@ -12,7 +12,7 @@ const IndexPage = () => (
     </GlitchEffect>
     <h3>Web Developer | Software Engineer</h3>
     <p>
-      I code for the web. 
+      I code for the web. I specialize in the back-end with PHP. I've been learning more front-end recently hoping to specialize in Javascript with Node, React and Vue.
       Reach me at <a href="mailto:rhan@candia.dev">rhan@candia.dev</a>. 
       Let's get in touch.<br />
       I'm still working on the rest of the site.
