@@ -77,7 +77,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <link rel="canonical" href="https://candia.dev/" />
+    </Helmet>
   )
 }
 
