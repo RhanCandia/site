@@ -67,17 +67,9 @@ function SEO({ description, lang, meta, keywords, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
-      ]
-        .concat(
-          keywords.length > 0
-            ? {
-                name: `keywords`,
-                content: keywords.join(`, `),
-              }
-            : []
-        )
-        .concat(meta)}
+      ]}
     >
+      <meta name="keywords" content={ keywords.length ? keywords.join(`, `) : "" } />
       <link rel="canonical" href="https://candia.dev/" />
     </Helmet>
   )
