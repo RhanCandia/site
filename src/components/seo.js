@@ -19,6 +19,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -28,50 +29,32 @@ function SEO({ description, lang, meta, keywords, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
-    <Helmet
+    <Helmet 
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ]
-        .concat(meta)}
-    >
-      <meta name="keywords" content={ keywords.length ? keywords.join(`, `) : "" } />
-      <link rel="canonical" href="https://candia.dev/" />
+      titleTemplate={`%s | ${site.siteMetadata.title}`}>
+
+      {/* General tags */}
+      <meta name="description" content={metaDescription} />
+      <meta name="keywords" content={keywords.length > 0 ? keywords.join(", ") : "" } />
+      <link rel="canonical" href={site.siteMetadata.siteUrl} />
+
+      {/* OpenGraph tags */}
+      <meta property="og:url" content={site.siteMetadata.siteUrl} />
+      <meta property="og:type" content="website" />
+      <meta property="og:title" content={site.siteMetadata.title} />
+      <meta property="og:description" content={metaDescription} />
+      {/* <meta property="og:image" content={image} /> */}
+      {/* <meta property="fb:app_id" content={seo.social.fbAppID} /> */}
+
+      {/* Twitter Card tags */}
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={site.siteMetadata.author} />
+      <meta name="twitter:title" content={site.siteMetadata.title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {/* <meta name="twitter:image" content={image} /> */}
     </Helmet>
   )
 }
